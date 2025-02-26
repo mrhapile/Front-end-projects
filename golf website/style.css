@@ -39,6 +39,52 @@ video{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    position:fixed;
+    position:fixed;    
+    z-index: -1;
+}
+
+#main{
+    position: relative;
+    background-color: rgba(19, 1, 1, 0.466);
+
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#page1 h1{
+    font-size: 100px;
+font-weight: 900;
+margin-top: 10px;
+position: relative;
+}
+/* PSEUDO CODE IN CSS */
+#page1 h1::before{
+    content: "EAT. DRINK. PLAY.";
+    position: absolute;
+    color: black;
+    top: -2px;
+    left: -3px;
+    -webkit-text-stroke: 1.5px #95c11e;
+    z-index: -1;
+}
+#page1 h2{
+    font-size: 25px;
+font-weight: 700;
+padding: 10px;
+}
+#page1 p{
+    font-size: 15px;
+    width: 40%;
+    text-align: center;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
     
 }
