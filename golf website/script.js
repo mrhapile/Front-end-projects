@@ -16,9 +16,12 @@ gsap.to("#main",{
     backgroundColor:"#000",
     scrollTrigger: {
         trigger: "#main",
-        scroller: "#body",
-        markers:true,
-        // start:"top -50%",
+        scroller: "body",
+        // markers:true,
+        start:"top -30%",
+        end:"top -70%",
+        
+        scrub:2,
 
     }
 })
