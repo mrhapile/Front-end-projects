@@ -71,8 +71,9 @@ html,body{
 #down{
     padding: 0 2vw;
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
     bottom: 1%;
+    right: 2%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -93,9 +94,62 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* position: absolute; */
     width: 25px;
     height: 25px;
+    /* left: 10vw; */
     padding: 0;
     border-radius: 50%;
     background-color: #888;
 }
+#page2{
+    height: auto;
+    width: 100%;
+    background-color: #000000;
+    padding-top: 200px;
+    padding-right: 10vw;
+    padding-left: 2vw;
+}
+.elem{
+    position: relative;
+    display: flex;
+    width: 100%;
+    border-top: 1px #888 solid;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.elem h1{
+    font-size: 8vw;
+    /* color: white; */
+    padding: 5vh;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.elem h5{
+    position: inherit;
+    font-size: 1.5vw;
+    display: flex;
+    text-align: right;
+}
+.elemlast{
+    border-bottom: 1px #888 solid;
+}
+.elem img{
+    display: none;
+    width: 50%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+.elem img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    max-width: 100%;
+}
+
